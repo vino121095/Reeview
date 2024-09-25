@@ -1,0 +1,177 @@
+/* Container that holds both left and right sections */
+.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    
+  }
+  /* Mobile devices (default styles) */
+  @media (max-width: 767px) {
+    .container {
+      display: block; /* Remove flexbox layout on mobile */
+      width: 100%; /* Ensure the container takes full width on mobile */
+    }
+  }
+  
+  /* Tablets and larger screens */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      display: block; /* Remove flexbox layout on mobile */
+      width: 100%; /* Ensure the container takes full width on mobile */
+    }
+  }
+  .reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Style for the left side section */
+  .left-side {
+    flex: 0 0 30%; /* Flex-basis of 30% */
+    padding: 10px; /* Optional: Add some padding */
+  }
+  
+  /* Style for the right side section */
+  .right-side {
+    flex: 0 0 70%; /* Flex-basis of 70% */
+    padding: 10px; /* Optional: Add some padding */
+  }
+  .container{
+    background-color: white;
+    border-radius: 8px;
+         
+          padding: 25px;
+          box-shadow: 0 0 20px #f0f0f0;
+  }
+  
+  #ratingheading{
+    font-size: 24px !important;
+    font-family: Nunito, sans-serif !important;
+  color: #000000 !important;
+  text-transform: none !important;
+  font-weight: 600;
+  }
+  #ratingsubheading{
+    font-size: 20px !important;
+    font-family: Nunito, sans-serif !important;
+  color: #000000 !important;
+  font-weight: 600;
+  }
+  .left-side p{
+    font-family: Nunito, sans-serif !important;
+    /* color: red; */
+  
+  }
+  
+  #ratingheadtext{
+    font-family: Nunito, sans-serif !important;
+    /* color: red !important; */
+    
+  }
+  #ratingcommontext{
+    font-family: Nunito, sans-serif !important;
+  font-weight: 500;
+  font-size: 18px;
+  }
+  #ratingtiming{
+    font-family: Nunito, sans-serif !important;
+    color: #797f89  !important;
+  }
+  #ratingviewmore{
+    font-family: Nunito, sans-serif !important;
+  color: #00c194 !important;
+  }
+  #ratingbox p{
+    font-family: Nunito, sans-serif !important;
+    color: #00c194 !important;
+    /* background-color: #ccf2e9; */
+  }
+  .popup-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.63); /* Semi-transparent background */
+    padding: 20px; /* Default padding for mobile devices */
+    box-sizing: border-box; /* Ensure padding is included in width and height */
+    overflow: auto; /* Allow scrolling inside the popup if needed */
+    z-index: 9999; /* Ensure the popup is on top of other content */
+  }
+  
+  
+  
+  
+  .section-left {
+    --sb-track-color: #c0c0c0;
+    --sb-thumb-color: #000000;
+    --sb-size: 7px;
+  }
+  
+  .section-left::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  .section-left::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+  }
+  
+  .section-left::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    .section-left {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+  
+  .section-right {
+    --sb-track-color: #c0c0c0;
+    --sb-thumb-color: #000000;
+    --sb-size: 8px;
+  }
+  
+  .section-right::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  
+  .section-right::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+  }
+  
+  .section-right::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    .section-right {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+  
+  .active{
+    /* border: 2px solid red !important */
+    /* background-color: #bababa; */
+    background-color: #00c194;
+  
+  }
+  
+  .overall-btn{
+    color: black !important;
+    /* border: 2px solid red; */
+  }
+  
+  .section-right{
+    border-top-left-radius: 30px;
+  }
+  
+  .popup-modal-inside{
+    /* border-top-left-radius: 50px; */
+  }
